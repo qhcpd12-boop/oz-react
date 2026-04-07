@@ -47,6 +47,11 @@ interface ImportMetaEnv {
   readonly VITE_FIREBASE_STORAGE_BUCKET: string
   readonly VITE_FIREBASE_MESSAGING_SENDER_ID: string
   readonly VITE_FIREBASE_APP_ID: string
+  readonly VITE_LLAMACAPP_BASE_URL: string
+  readonly VITE_MODEL: string
+  readonly VITE_MODEL_OPUS: string
+  readonly VITE_MODEL_SONNET: string
+  readonly VITE_MODEL_HATKU: string
 }
 
 interface ImportMeta {

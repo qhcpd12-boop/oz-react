@@ -1,5 +1,4 @@
 import './App.css'
-
 import { Routes, Route } from 'react-router'
 import Posts from './pages/posts/Posts'
 import Post from './pages/posts/Post'
@@ -33,7 +32,7 @@ function App() {
       <Route path="/auth/signup" element={<Signup />} />
       <Route path="/auth/email-verification" element={<EmailVerification />} />
       <Route path="/auth/logout" element={<Logout />} />
-      
+
       <Route path="/" element={<Home />} />
       <Route path="/info" element={<BasicLayout />}>
         <Route path="about" element={<About />} />
@@ -48,7 +47,7 @@ function App() {
       </Route>
       <Route path="/posts" element={<PostLayout />}>
         <Route index element={<Posts />} />
-        <Route path=":postId" element={<Post/>} />
+        <Route path=":postId" element={<Post />} />
       </Route>
       <Route path="/users" element={<PostLayout />}>
         <Route index element={<Users />} />
